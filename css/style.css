@@ -1,0 +1,71 @@
+.header {
+  padding: 0px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  /* font-size: 42px;  */
+
+
+}
+
+.w3-lobster {
+  /* font-family: "Lobster", Sans-serif;  */
+
+  font-family: 'Sirin Stencil', cursive;
+}
+
+
+.font-shadow {
+  /* background-color: #666666;  */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 3px 3px 3px;
+}
+
+
+.bg-img {
+
+  width: 100px;
+  /* float: right;  */
+
+}
+
+.button-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: auto;
+  display: flexbox;
+
+}
+
+.button-box {
+  margin: 2%;
+}
+
+.footer {
+  position:static;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 2%;
+  width: 100%;
+  font-size: large;
+}
+
+body {
+
+  background-image: url('../images/Website-Background-gray.jpg');
+  background-repeat: repeat-x repeat-y;
+  background-clip: border;
+
+  background-size: 100%;
+
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}

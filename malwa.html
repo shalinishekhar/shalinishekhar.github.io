@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<title>Rajasthani Schools of Painting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+
+
+<body>
+
+
+    <div class="w3-container ">
+
+        <div class="header font-shadow w3-xxlarge  ">
+
+            <div class="w3-row  w3-metro-darken ">
+                <div class="w3-col m10 l10 s12 w3-lobster  w3-center w3-padding-64">
+                    The Rajasthani Schools of Painting <br>
+                    Web Designing Project <br>
+                    Roll No 10 - DIO 127
+                </div>
+                <div class="w3-col m2 l2 s12 w3-center  w3-padding-64">
+                    <img src="images/background.png" alt="Image Unavailable" class="bg-img w3-image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-bar  w3-black">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile ">Home</a>
+            <a href="mewar.html" class="w3-bar-item w3-button w3-mobile">Mewar Paintings</a>
+            <a href="bundi.html" class="w3-bar-item w3-button w3-mobile">Bundi Paintings</a>
+            <a href="kisangarh.html" class="w3-bar-item w3-button w3-mobile">Kishangarh Paintings</a>
+            <a href="malwa.html" class="w3-bar-item w3-button w3-mobile w3-red">Malwa Paintings</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-mobile" style="float: right;">Contact Me</a>
+
+        </div>
+
+
+        <div class="w3-row ">
+
+            <div class="w3-col m3 l3 s12">
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        The Malwa School flourished between 1600 and 1700 CE
+                        and is most representative of the Hindu Rajput courts.
+                        Its two-dimensional simplistic language appears as a
+                        consummation of stylistic progression from the Jain
+                        manuscripts to the Chaurpanchashika manuscript paintings.
+                    </p>
+
+
+
+
+                    <p>
+                        Unlike the specificity of Rajasthani schools
+                        that emerged and flourished in precise territorial
+                        kingdoms and courts of their respective kings,
+                        Malwa School defies a precise centre for its origin
+                        and instead suggests a vast territory of Central
+                        India, where it got articulated with a sporadic
+                        mention of few places, such as Mandu, Nusratgarh
+                        and Narsyang Sahar.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="w3-col m6 l6 s12 ">
+                <div class="w3-center">
+                    <div class="w3-section">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">
+                            < Prev</button>
+                                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ></button>
+                    </div>
+
+                    <div class="w3-content" style="max-width:400px;">
+                        <img class="mySlides" src="images/malwa/1.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/malwa/2.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/malwa/3.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/malwa/4.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/malwa/5.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/malwa/6.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/malwa/7.jpg" style="width: 400px; height: 400px">
+                    </div>
+
+                    <div class="button-box">
+                        <button class="w3-button demo button-bg" onclick="currentDiv(1)">1</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(2)">2</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(3)">3</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(4)">4</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(5)">5</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(6)">6</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(7)">7</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-red", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-red";
+                }
+            </script>
+
+
+
+
+
+            <div class="w3-col m3 l3 s12">
+
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        A large number of Malwa
+                        paintings discovered from the Datia Palace
+                        collection supports a claim for Bundelkhand as
+                        the region of painting. But the mural paintings
+                        in the Datia Palace of Bundelkhand defy an
+                        obvious Mughal influence, which is contrary to
+                        the works on paper that are stylistically inclined
+                        towards indigenous two-dimensional austerity. A
+                        complete absence of the mention of patron kings
+                        and also portraits in this school supports a view
+                        that these paintings were bought by the Datia rulers from
+                        travelling artists, who carried paintings on popular themes,
+                        such as the Ramayana, Bhagvata Purana, Amaru Shataka,
+                        Rasikapriya, Ragamala and Baramasa, among others.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row">
+
+            <div class="w3-col m12 l12 s12">
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        Malwa paintings include scenes from the Bhagavata Purana ehich relates to Lord Krishna's life.
+                        The legendary love story of Baz Bahadur and Roopmati at Mandu has caught the imagination
+                        of Malwa artists. Since architecture is such a pivotal aspect in Malwa miniatures, it is
+                        important to mention here that Malwa's architectural style developed mostly in the 15th
+                        and 16th century. Some features included combination of arch with pillar, lintel and beam,
+                        use of coloured marble, precious stones, glazed tiles and grand, stately steps.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container footer">
+            Copyright &copy; 2022 - SS. All information available on this website is from public sources.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

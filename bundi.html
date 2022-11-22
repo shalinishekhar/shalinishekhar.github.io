@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<title>Rajasthani Schools of Painting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+
+
+<body>
+
+
+    <div class="w3-container">
+
+        <div class="header font-shadow w3-xxlarge  ">
+
+            <div class="w3-row  w3-metro-darken ">
+                <div class="w3-col m10 l10 s12 w3-lobster  w3-center w3-padding-64">
+                    The Rajasthani Schools of Painting <br>
+                    Web Designing Project <br>
+                    Roll No 10 - DIO 127
+                </div>
+                <div class="w3-col m2 l2 s12 w3-center  w3-padding-64">
+                    <img src="images/background.png" alt="Image Unavailable" class="bg-img w3-image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-bar  w3-black">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile ">Home</a>
+            <a href="mewar.html" class="w3-bar-item w3-button w3-mobile">Mewar Paintings</a>
+            <a href="bundi.html" class="w3-bar-item w3-button w3-mobile w3-red">Bundi Paintings</a>
+            <a href="kisangarh.html" class="w3-bar-item w3-button w3-mobile ">Kishangarh Paintings</a>
+            <a href="malwa.html" class="w3-bar-item w3-button w3-mobile">Malwa Paintings</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-mobile" style="float: right;">Contact Me</a>
+
+        </div>
+
+        <div class="w3-row ">
+
+            <div class="w3-col m3 l3 s12">
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        A prolific and distinct school of painting flourished in Bundi
+                        in the seventeenth century, which is remarkable for its
+                        unblemished colour sense and excellent formal design.
+                        Bundi Ragamala dated 1591, assigned to the earliest
+                        and formative phase of Bundi painting, has been painted at
+                        Chunar in the reign of Bhoj Singh (1585-1607), the Hada
+                        Rajput ruler.
+                    </p>
+
+
+
+
+                    <p>
+                        The Bundi school blossomed under the patronage of two
+                        rulers - Rao Chattar Sal (1631-1659), who was made the
+                        governor of Delhi by Shahjahan and played a conspicuous
+                        role in the subjugation of the Deccan; and his son Rao Bhao
+                        Singh (1659-1682), who was an enthusiastic, self-indulging
+                        patron as revealed from numerous portraits that he
+                        commissioned of himself and other dated works. Innovative
+                        developments have been observed under the reigns of his
+                        successors Aniruddha Singh (1682-1702) and Budh Singh,
+                        whose whiskered face is visible in many portraits. Despite
+                        numerous political disputes and having lost his kingdom four
+                        times, he is known to have encouraged the art of painting.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="w3-col m6 l6 s12 ">
+                <div class="w3-center">
+                    <div class="w3-section">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">
+                            < Prev</button>
+                                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ></button>
+                    </div>
+
+                    <div class="w3-content" style="max-width:400px;">
+                        <img class="mySlides" src="images/bundi/1.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/bundi/2.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/bundi/3.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/bundi/4.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/bundi/5.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/bundi/6.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/bundi/7.jpg" style="width: 400px; height: 400px">
+                    </div>
+
+                    <div class="button-box">
+                        <button class="w3-button demo button-bg" onclick="currentDiv(1)">1</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(2)">2</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(3)">3</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(4)">4</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(5)">5</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(6)">6</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(7)">7</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-red", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-red";
+                }
+            </script>
+
+
+
+
+
+            <div class="w3-col m3 l3 s12">
+
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        Painting activity entered its most accomplished phase
+                        albeit for a short time during the long reign of Budh
+                        Singh's son, Umed Singh (1749-1771), where it acquired
+                        refinement in minuteness of details. Bundi paintings during
+                        the eighteenth century appear to have imbibed Deccani
+                        aesthetics, such as love for bright and vivid colours. Umed Singh's successor Bishen Singh
+                        (1771-1821) ruled
+                        Bundi for 48 years and was a connoisseur of art. He had
+                        a keen interest in hunting, and him hunting wild animals
+                        frequently figures in the paintings of his period. Under his
+                        successor Ram Singh (1821-1889), the chitrashalain of the
+                        Bundi palace was decorated with mural paintings of royal
+                        processions, hunting scenes and episodes of Krishna's story.
+                        Last stages of painting at Bundi are best exemplified by
+                        several wall paintings in the palace.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row">
+
+            <div class="w3-col m12 l12 s12">
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        A distinct feature of Bundi and
+                        Kota School is a keen interest in the
+                        depiction of lush vegetation; picturesque
+                        landscape with varied flora, wildlife
+                        and birds; hills and thick jungles; and
+                        water bodies. It also has a series of fine
+                        equestrian portraits. The drawing of
+                        elephants is, particularly, unsurpassed
+                        in both Bundi and Kota. Bundi artists
+                        had their own standards of feminine
+                        beauty - women are petite with round
+                        faces, receding foreheads, sharp noses,
+                        full cheeks, sharply penciled eyebrows
+                        and a 'pinched' waist.
+                        Bundi's earliest phase of painting,
+                        Bundi Ragamala bears an inscription
+                        in Persian that dates back to 1591,
+                        mentions names of its artists - Shaykh
+                        Hasan, Shaykh Ali and Shaykh Hatim,
+                        who introduce themselves as pupils of
+                        master artists, Mir Sayyid Ali and Khwaja
+                        Abddus Samad of the Mughal court.
+                        They mention Chunar (near Benaras)
+                        as the place of origin of the painting,
+                        where Rao Bhoj Singh and his father
+                        Rao Surjan Singh maintained a palace.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container footer">
+            Copyright &copy; 2022 - SS. All information available on this website is from public sources.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

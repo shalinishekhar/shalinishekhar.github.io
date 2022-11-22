@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<title>Rajasthani Schools of Painting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+
+
+<body>
+
+
+    <div class="w3-container">
+
+        <div class="header font-shadow w3-xxlarge  ">
+
+            <div class="w3-row  w3-metro-darken ">
+                <div class="w3-col m10 l10 s12 w3-lobster  w3-center w3-padding-64">
+                    The Rajasthani Schools of Painting <br>
+                    Web Designing Project <br>
+                    Roll No 10 - DIO 127
+                </div>
+                <div class="w3-col m2 l2 s12 w3-center  w3-padding-64">
+                    <img src="images/background.png" alt="Image Unavailable" class="bg-img w3-image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-bar  w3-black">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile ">Home</a>
+            <a href="mewar.html" class="w3-bar-item w3-button w3-mobile">Mewar Paintings</a>
+            <a href="bundi.html" class="w3-bar-item w3-button w3-mobile">Bundi Paintings</a>
+            <a href="kisangarh.html" class="w3-bar-item w3-button w3-mobile w3-red">Kishangarh Paintings</a>
+            <a href="malwa.html" class="w3-bar-item w3-button w3-mobile">Malwa Paintings</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-mobile" style="float: right;">Contact Me</a>
+
+        </div>
+
+        <div class="w3-row ">
+
+            <div class="w3-col m3 l3 s12">
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        Widely held among the most stylised of all Rajasthani
+                        miniatures, Kishangarh paintings are distinguished by their
+                        exquisite sophistication and distinct facial type exemplified
+                        by arched eyebrows, lotus petal shaped eyes slightly tinged
+                        with pink, having drooping eyelids, a sharp slender nose and
+                        thin lips.
+                    </p>
+
+
+
+
+                    <p>
+                        Kishan Singh, one of the sons of the king of Jodhpur,
+                        founded the state of Kishangarh in 1609. By the
+                        mid-seventeenth century under the patronage of Man Singh (1658-1706), artists were already
+                        working in the Kishangarh
+                        court. A distinctive style of the state with a general tendency
+                        to elongate the human form, making lavish use of green and
+                        penchant for depicting panoramic landscapes had evolved
+                        by the early eighteenth century during the reign of Raj Singh
+                        (1706-1748).
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="w3-col m6 l6 s12 ">
+                <div class="w3-center">
+                    <div class="w3-section">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">
+                            < Prev</button>
+                                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ></button>
+                    </div>
+
+                    <div class="w3-content" style="max-width:400px;">
+                        <img class="mySlides" src="images/kgr/1.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/kgr/2.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/kgr/3.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/kgr/4.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/kgr/5.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/kgr/6.jpg" style="width: 400px; height: 400px">
+                        <img class="mySlides" src="images/kgr/7.jpg" style="width: 400px; height: 400px">
+                    </div>
+
+                    <div class="button-box">
+                        <button class="w3-button demo button-bg" onclick="currentDiv(1)">1</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(2)">2</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(3)">3</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(4)">4</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(5)">5</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(6)">6</button>
+                        <button class="w3-button demo button-bg" onclick="currentDiv(7)">7</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-red", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-red";
+                }
+            </script>
+
+
+
+
+
+            <div class="w3-col m3 l3 s12">
+
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        With Raj Singh getting initiated into the
+                        Pushtimargiya cult of Vallabhacharya, Krishna Lila themes
+                        became personal favourites for the rulers of Kishangarh and
+                        represented a major portion of their court art.
+                        Sawant Singh's most celebrated and outstanding artist was
+                        Nihal Chand. Nihal Chand worked for Sawant Singh between
+                        1735 and 1757, and composed paintings on Sawant Singh's
+                        poetry that portrayed the theme of divine lovers - Radha
+                        and Krishna, in courtly surroundings, often appearing tiny
+                        in the vastness and minutiae of their panoramic landscape
+                        settings. Kishangarh artists reveled in the depiction of vistas
+                        in accentuated colours.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row">
+
+            <div class="w3-col m12 l12 s12">
+                <div class="w3-panel w3-sand w3-leftbar w3-bottombar w3-rightbar w3-topbar w3-border-red">
+                    <p>
+                        It is said that Savant Singh fell in love with a lady who was employed
+                        as a singer by his stepmother in her palace. The real name of the lady
+                        is obscure, but came to be known as Bani Thani ("Lady of Fashion").
+                        There are speculations that the facial features in the Kishangarh
+                        paintings have been modelled on her features.
+                        The master artist who channeled the astounding works and artistic
+                        passions of his patron into completely new visual outlook of images
+                        was Nihal Chand. The school lasted till the 19th century and in 1820,
+                        a series of paintings that depicted Gita Govinda were created.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container footer">
+            Copyright &copy; 2022 - SS. All information available on this website is from public sources.
+        </div>
+
+    </div>
+
+</body>
+
+</html>
